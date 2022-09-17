@@ -1,0 +1,93 @@
+import math
+print ("список функций:умножение,деление,вычитание,сложение,возведение в степень,логарифм,округление-,округление+")
+print ("выбирите функцию")
+x=input()
+while x not in ("сложение","вычитание","умножение","деление","возведение в степень","логарифм","округление-","округление+"):
+    x = input("такой функции не существует, выбирите функцию из списка")
+if x==("сложение"):
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input("введите второе число число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",a+b)
+    
+if x=="вычитание":
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input("введите второе число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",a-b)
+    
+if x=="умножение":
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input ("введите второе число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",a*b)
+    
+if x=="деление":
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input("введите второе число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",a/b)
+    
+if x=="возведение в степень":
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input("введите второе число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",a**b)
+    
+if x=="логарифм":
+    a = input("введите первое число")
+    while a.isdigit()==False:
+        a = input("калькулятор может работать только с числами")
+    a=int(input())
+    print (a)
+    b = input("введите второе число")
+    while b.isdigit()==False:
+        b = input("калькулятор может работать только с числами")
+    b=int(input())
+    print(b)
+    print("Ответ:",math.log(a,b))
+    
+if x=="округление+":
+    a = float(input("введите число"))
+    a=float(a)
+    print("Ответ:",math.ceil(a))
+    
+if x=="округление-":
+    a = float(input("введите число"))
+    a=float(a)
+    print("Ответ:",math.floor(a))
